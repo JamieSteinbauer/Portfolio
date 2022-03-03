@@ -1,7 +1,7 @@
 :root {
-    --primary-color: red
-    --secondary-color: black
-    --tertiary-color: 
+  --primary-color: pink;
+  --secondary-color: white;
+  --tertiary-color: lavender;
 }
 
 * {
@@ -15,18 +15,40 @@ body {
     font-family: Verdana, Tahoma, sans-serif;
 }
 
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
+
+header {
+  padding: 20px 35px;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+header a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+header nav ul li {
+  display: inline;
+}
 
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
 }
 
 header nav {
@@ -34,8 +56,48 @@ header nav {
   }
 
 header nav ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 15px;
+    color: var(--tertiary-color);
+    border-radius: 5px;
     text-shadow: none;
 }  
+
+.bio 
+
+.bio h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: blue;
+}
+
+.bio p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: smaller;
+  color: var(--primary-color);
+
+}
+
+.flex-row1 {
+  display: flex;
+}
+
+footer {
+  background: var(--primary-color);
+  width: 100%;
+  padding: 30px 70px;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--tertiary-color);
+  border-radius: 5px;
+  text-shadow: none;
+}
