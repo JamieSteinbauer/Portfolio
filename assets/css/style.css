@@ -11,8 +11,8 @@
   }
 
 body {
-    color: var(--primary-color);
-    font-family: Verdana, Tahoma, sans-serif;
+  color: var(--primary-color);
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 
@@ -61,23 +61,25 @@ header nav ul li a:hover {
     text-shadow: none;
 }  
 
-.bio 
+.bio {
+  text-align: center;
+}
 
 .bio h2 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: blue;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 35px;
+  color: gray;
+  margin-bottom: 10px;
+  padding: 20px 0 5px 0;
 }
 
 .bio p {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: smaller;
-  color: var(--primary-color);
-
-}
-
-.flex-row1 {
-  display: flex;
+  line-height: 1.7;
+  color: gray;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 10px 300px 30px 300px;
 }
 
 footer {
