@@ -6,16 +6,17 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   color: var(--primary-color);
   font-family: Verdana, Tahoma, sans-serif;
 }
 
+/* Header styles */
 header {
   padding: 20px 35px;
   background-color: var(--primary-color);
@@ -45,12 +46,9 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     margin: 0 30px;
-    font-weight: lighter;
-    font-size: 22px;
 }
 
 header nav {
@@ -64,10 +62,9 @@ header nav ul li a:hover {
     text-shadow: none;
 }  
 
+/* About me styles */
 .bio {
   text-align: center;
-  border-bottom: var(--tertiary-color);
-  border-bottom: 5px solid var(--tertiary-color);
 }
 
 .bio h2 {
@@ -95,21 +92,49 @@ header nav ul li a:hover {
   justify-content: center;
 }
 
-.contact-info {
+/* Work section */
+.apps {
   text-align: center;
   padding: 10px 0 10px 0;
 }
 
-.contact-info h2 {
-  font-size: 35px;
+.apps h2 {
+  font-size: 25px;
   color: var(--quaternary-color);
+  margin-bottom: 15px;
+}
+
+.apps img:hover {
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+}
+
+/* Contact section styles */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 20px 0;
+  background-color: var(--primary-color);
+}
+
+.contact-info ul {
+  list-style: none;
+}
+
+.contact-info h2 {
+  font-size: 25px;
+  color: var(--secondary-color);
   margin-bottom: 10px;
   padding: 20px 0 5px 0;
 }
 
 .contact-info a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.contact-info li {
+  color: var(--secondary-color);
 }
 
 .contact-info a:visited {
@@ -124,44 +149,53 @@ header nav ul li a:hover {
 .flex3 {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  padding: 30px 50px 30px 50px;
-  gap: 100px;
+  justify-content: space-between;
+  margin: 10px 10px 10px 10px;
 }
 
-.apps {
-  text-align: center;
-  padding: 10px 0 10px 0;
-}
-
-.apps h2 {
-  font-size: 35px;
-  color: var(--quaternary-color);
-}
-
-.apps img:hover {
-  opacity: 0.5;
-  transition: 0.3s ease-in-out;
-}
-
+/* Footer styles */
 footer {
   background: var(--primary-color);
   width: 100%;
-  padding: 30px 70px;
+  margin-bottom: 20px;
 }
 
-footer div {
-  display: flex;
-  justify-content: space-between;
+
+/* Smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+  header {
+  padding-bottom: 0;
+  justify-content: center;
+  position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
 }
 
-footer a {
-  color: var(--secondary-color);
-  text-decoration: none;
+/* Tablets and smaller */
+@media screen and (max-width: 768px) {
+
 }
 
-footer a:hover {
-  color: var(--tertiary-color);
-  border-radius: 5px;
-  text-shadow: none;
+/*Mobile phones and smaller */
+@media screen and (max-width: 575px) {
+
 }
