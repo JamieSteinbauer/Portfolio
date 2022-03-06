@@ -2,6 +2,7 @@
   --primary-color: pink;
   --secondary-color: white;
   --tertiary-color: lavender;
+  --quaternary-color: gray;
 }
 
 * {
@@ -15,15 +16,12 @@ body {
   font-family: Verdana, Tahoma, sans-serif;
 }
 
-
 header {
   padding: 20px 35px;
   background-color: var(--primary-color);
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  list-style: none;
+  flex-wrap: wrap;
 }
 
 header h1 {
@@ -38,8 +36,12 @@ header a {
   text-decoration: none;
 }
 
-header nav ul li {
-  display: inline;
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 header nav ul li a {
@@ -53,6 +55,7 @@ header nav ul li a {
 
 header nav {
     margin: 7px 0;
+    display: flex;
   }
 
 header nav ul li a:hover {
@@ -63,23 +66,82 @@ header nav ul li a:hover {
 
 .bio {
   text-align: center;
+  border-bottom: var(--tertiary-color);
+  border-bottom: 5px solid var(--tertiary-color);
 }
 
 .bio h2 {
   font-family: Verdana, Tahoma, sans-serif;
-  font-size: 35px;
-  color: gray;
-  margin-bottom: 10px;
-  padding: 20px 0 5px 0;
+  font-size: 25px;
+  color: var(--quaternary-color);
+  margin: 80px auto;
 }
 
 .bio p {
   line-height: 1.7;
-  color: gray;
-  width: 90%;
-  margin: 0 auto;
+  color: var(--quaternary-color);
+  width: 50%;
+  margin: 50px auto;
   font-size: 20px;
-  padding: 10px 300px 30px 300px;
+}
+
+.bio img {
+  border: 5px solid var(--primary-color);
+  margin: 20px
+}
+
+.flex1 {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info {
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.contact-info h2 {
+  font-size: 35px;
+  color: var(--quaternary-color);
+  margin-bottom: 10px;
+  padding: 20px 0 5px 0;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.contact-info a:visited {
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.flex3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 30px 50px 30px 50px;
+  gap: 100px;
+}
+
+.apps {
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.apps h2 {
+  font-size: 35px;
+  color: var(--quaternary-color);
+}
+
+.apps img:hover {
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
 }
 
 footer {
